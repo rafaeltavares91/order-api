@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.order_api.OrderApiApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-11T00:24:31" hostname="BR-RMT-RAFTAV" time="1.461">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.order_api.OrderApiApplicationTests" time="1.461"/>
+  <system-out><![CDATA[21:24:25.940 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.order_api.OrderApiApplicationTests]: OrderApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:24:26.103 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.order_api.OrderApiApplication for test class com.order_api.OrderApiApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2025-02-10T21:24:26.756-03:00  INFO 54163 --- [order-api] [    Test worker] com.order_api.OrderApiApplicationTests   : Starting OrderApiApplicationTests using Java 23.0.2 with PID 54163 (started by rafael.tavares in /Users/rafael.tavares/Documents/Personal/order-api)
+2025-02-10T21:24:26.760-03:00  INFO 54163 --- [order-api] [    Test worker] com.order_api.OrderApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T21:24:28.070-03:00  INFO 54163 --- [order-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T21:24:28.101-03:00  INFO 54163 --- [order-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2025-02-10T21:24:28.813-03:00  INFO 54163 --- [order-api] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T21:24:28.856-03:00  INFO 54163 --- [order-api] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T21:24:28.896-03:00  INFO 54163 --- [order-api] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T21:24:29.393-03:00  INFO 54163 --- [order-api] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T21:24:29.462-03:00  INFO 54163 --- [order-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T21:24:29.639-03:00  INFO 54163 --- [order-api] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-10T21:24:29.646-03:00  INFO 54163 --- [order-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T21:24:29.673-03:00  WARN 54163 --- [order-api] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-10T21:24:29.712-03:00  INFO 54163 --- [order-api] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T21:24:29.999-03:00  INFO 54163 --- [order-api] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T21:24:30.004-03:00  INFO 54163 --- [order-api] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T21:24:30.362-03:00  WARN 54163 --- [order-api] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-10T21:24:30.834-03:00  INFO 54163 --- [order-api] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-10T21:24:31.393-03:00  INFO 54163 --- [order-api] [    Test worker] com.order_api.OrderApiApplicationTests   : Started OrderApiApplicationTests in 4.624 seconds (process running for 6.923)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/rafael.tavares/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.15.11/a38b16385e867f59a641330f0362ebe742788ed8/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
